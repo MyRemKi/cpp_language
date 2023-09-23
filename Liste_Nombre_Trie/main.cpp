@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 {
     bool retour=true;
     
-    cout<<"Attention le nombre de generation de distances ne peut pas etre superieure au y (distance maximum)"<<endl;
+    cout<<"Attention le nombre de generation ne peut pas etre superieure au y (maximum) et inférieure à x (minimum)"<<endl;
     sleep(7);
     system("clear");
     
@@ -44,7 +44,7 @@ bool Algorithme(int min, int max, int nb_generation){
         int y=0;
         
         while(y<nb_generation){
-            int r=rand() % max + min;
+            int r=rand() % x-min + (min);
             bool retour=true;
             
             for(int x=0; x<liste.size();x++){
