@@ -44,7 +44,7 @@ bool Algorithme(int min, int max, int nb_generation){
         int y=0;
         
         while(y<nb_generation){
-            int r=rand() % x-min + (min);
+            int r=rand() % (max-min) + (min);
             bool retour=true;
             
             for(int x=0; x<liste.size();x++){
