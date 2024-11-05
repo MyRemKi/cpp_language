@@ -3,6 +3,8 @@
 
 class Animation {
 public:
+    Animation(sf::Sprite* sprite, float frameTime);
+    void update();
     std::vector<sf::IntRect> frames;
     sf::Sprite* sprite;
     float frameTime;
