@@ -1,3 +1,23 @@
 {
-  
+  {
+    "text" : "TEST",
+    "sentence" : "TE ST.",
+    "number" : 0,
+    "float" : 0.0,
+    "negativenumber" : -1,
+    "boolean" : false
+  }
+
+  {
+    "TestTable1" = ["Test1","Te st2","Tes t3."],
+    "TestTable2" = [1,-2,3.0],
+    "TestTable3" = [true,true,false],
+    "TestTable4" = ["Test1",1,false]
+  }
+{
+    "TestObject1" = {"text" : "TEST"},
+    "TestObject2" = {"number" : 1},
+    "TestObject3" = {"boolean" : false},
+    "TestObject4" = {"text" : "Test1","number" : 1, "boolean" : true}
+  }
 }
