@@ -23,11 +23,31 @@
 }
 
 {
-  "Settings" : {
-
+  "Settings" : 
+  {
+    "FPS" : 60,
+    "Volume" : 100,
+    "Sound" : true,
+    "Window" : "1920*1080"
   },
-  "Save" :[
-    
-  ],
-  "
+  "Save" :
+    {
+      "numbersave" : 1,
+      "namesave" : "none",
+      "caracterchest":
+        {
+          "casegun" : 0,
+          "caseeffect1" : 0,
+          "caseeffect2" : 0,
+          "backpack" : [],
+          "money" : 0
+          
+        },
+      "stat" : 
+        {
+          "level" : 1,
+          "xp : 0,
+          "maxstep" : 0
+        }
+    }
 }
