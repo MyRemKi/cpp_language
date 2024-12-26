@@ -3,24 +3,31 @@
 
 #include <SFML/Graphics.hpp>
 
-Class ClockGame{
+Class ClockGame {
     public :
         ClassGame();
         
         bool GetShotClock();
-        void RestartShotClock();
+        virtual void RestartShotClock();
         
         bool GetRecieveDamageClock();
-        void RestartRecievrDamageClock();
+        virtual void RestartRecievrDamageClock();
 
         bool GetNextRoundClock();
-        void RestartNextRoundClock();
-        
-        ~ClassGame();
+        virtual void RestartNextRoundClock();
+
+        virtual void RstartTimersClock(){
+            timer1.restart();
+            timer2.restart();
+            timer3.restart();
+        }
+            
+        virtual ~ClassGame();
 
     private :
+        const float shotCoolDown=0.1f, nextroundCoolDown=5.0f, recievedamageCoolDown=5.0f;
         sf::Clock recievedamageclock, nextroundclock, shotclock;
-        sf::Clock timer1, timer2, timer3;
+        //sf::Clock timer1, timer2, timer3;
 }
 
 #endif CLOCKGAME_H
