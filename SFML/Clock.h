@@ -23,4 +23,4 @@ Class ClockGame{
         sf::Clock timer1, timer2, timer3;
 }
 
-#enfin CLOCKGAME_H
+#enfif CLOCKGAME_H
