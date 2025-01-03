@@ -41,7 +41,7 @@ int main(int argc, char **argv)
         
         //AFFICHAGE TRAME
         for(int x=0; x<(int)trame_pwd.size();x++){
-            cout<<trame_pwd[x]<<" ";
+            cout<<trame_pwd[x];
         }
         cout<<endl;
         
